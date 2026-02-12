@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Book Management</h1>
+
+    <!-- TODO 11: Set action + method to POST /books/add -->
+    <form action="/books/add" method="post">
+      <!-- TODO 12: input name must be "bookName" -->
+      <input
+        type="text"
+        placeholder="Book name"
+        name="bookName"
+        id="bookName"
+        required
+      />
+      <button type="submit">Add</button>
+      <button type="button" id="deleteBtn">Delete</button>
+      <button type="button" id="searchBtn">Search</button>
+    </form>
+
+    <h2>Book List</h2>
+    <div id="book-list"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
